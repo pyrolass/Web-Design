@@ -292,10 +292,10 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+  height: auto;
   background-color: rgb(50, 123, 168);
   color: white;
   text-align: center;
-  columns: 3;
-   border-top: 10px solid;
+  border-top: 10px solid;
   border-color:rgb(145, 144, 70);
 }
