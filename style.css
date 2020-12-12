@@ -17,7 +17,7 @@ nav {
   padding-left: 350px;
   padding-top: 20px;
   position: sticky;
-  height: 80px;
+  height: auto;
   top: 0;
   z-index: 2;
 
@@ -27,7 +27,8 @@ nav {
   position: relative;
   color: black;
   text-align: center;
-  display: inline;
+  display: inline-block;
+  height: auto;
   text-decoration-line: none;
 }
 
@@ -47,11 +48,12 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: rgb(201, 226, 240);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
 
 .dropdown-content a {
   color: black;
@@ -140,19 +142,19 @@ ul {
   text-align: center;
 }
 table{
-  margin-left: auto;
-  margin-right: auto;
-  width: 8em
-
+  width: 80%;
 }
 .header-th{
 
 }
 input{
   border-left: 2px solid;
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
   border-right: 2px solid;
   border-top: 2px solid;
   border-bottom: 5px solid;
+
   border-color: rgb(50, 123, 168);
   display: block;
   background-color: rgb(201, 226, 240);
@@ -163,6 +165,8 @@ fieldset{
   border-right: 2px solid;
   border-top: 2px solid;
   border-bottom: 5px solid;
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
   border-color: rgb(50, 123, 168);
   background-color:rgb(201, 226, 240);
 
@@ -179,6 +183,8 @@ legend{
 }
 
 select{
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
   border-left: 2px solid;
   border-right: 2px solid;
   border-top: 2px solid;
@@ -187,6 +193,8 @@ select{
   background-color:rgb(201, 226, 240);
 }
 textarea{
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
   border-left: 2px solid;
   border-right: 2px solid;
   border-top: 2px solid;
@@ -217,6 +225,7 @@ th{
   border-left: 2px solid;
   border-right: 2px solid;
   border-top: 2px solid;
+  border-radius: 5px;
   border-bottom: 2px solid;
   border-color: rgb(50, 123, 168);
 }
@@ -250,6 +259,8 @@ th{
   border-right: 2px solid;
   border-top: 2px solid;
   border-bottom: 2px solid;
+  height: 35px;
+  border-radius: 5px;
   border-color: rgb(50, 123, 168);
 
 }
@@ -287,6 +298,11 @@ a{
   grid-template-columns: auto auto;
   grid-gap: 10px;
 } 
+
+#current{
+  border-bottom: solid;
+  border-color: rgb(145, 144, 70)
+}
 footer {
   position: relative;
   left: 0;
